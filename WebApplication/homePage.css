@@ -1,0 +1,29 @@
+.LinkNUS {
+    top: 1vh;
+    left: 50vh;
+}
+
+.header-bar ul {
+    display: flex;
+    position: relative;
+    top: 3vh;
+    left: 160vh;
+    list-style: none;
+}
+
+.color-overlay {
+    position: absolute;
+}
+
+.body-nav {
+    top: 50vh;
+
+}
+
+.body-nav ul {
+    position: absolute;
+    top: 52vh;
+    left: 25vh;
+    display: flex;
+    list-style: none;
+}

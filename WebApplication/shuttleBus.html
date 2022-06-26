@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="shuttleBus.css" rel="stylesheet">
+    <title>NUS Shuttle Bus</title>
+</head>
+<body>
+    <div class="color-overlay"></div>
+    <div class="side-white-rectangle"></div>
+    <div class="navigation">
+        <!--Create icons on the left hand side [include the go to home page button]-->
+        <nav class="menu-bar">
+            
+            <!--Inlcude the go back button-->
+            <ul>
+                <li class="backward"><a href="homePage.html"><img src="./images/back.png"></a></li>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <li class="bus"><a href="shuttleBus.html"><img src="./images/green_bus.png"></a></li>
+                <br>
+
+                <li class="zoom"><a href="zoom.html"><img src="./images/zoom.png"></a></li>
+                <br>
+
+                <li class="todo"><a href="todoList.html"><img src="./images/todo_list.png"></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <form class = "select-form" action="includes/getStop.inc.php" method="POST"> 
+        <select name="selectStop" placeholder="Select Bus Stop">
+          <option value="" disabled selected>Select Bus Stop</option>
+          <!-- <?php
+          foreach($stops as $stop) {
+            echo "<option value='$stop'>$stop</option>";
+          }
+          ?> -->
+        </select>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>

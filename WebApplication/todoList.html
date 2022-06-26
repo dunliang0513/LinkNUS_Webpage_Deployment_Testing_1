@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="todoList.css" rel="stylesheet">
+    <title>Todo List</title>
+    <script defer src="todoListScript.js"></script>
+</head>
+<body>
+    <header>
+    </header>
+
+    
+      
+    <div class="color-overlay"></div>
+    <!-- <h4 class="title">ToDo List</h4> -->
+
+    <div class="side-white-rectangle"></div>
+    <div class="navigation">
+        <!--Create icons on the left hand side [include the go to home page button]-->
+        <nav class="menu-bar">
+            
+            <!--Inlcude the go back button-->
+            <ul>
+                <li class="backward"><a href="homePage.html"><img src="./images/back.png"></a></li>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <li class="bus"><a href="shuttleBus.html"><img src="./images/bus.png"></a></li>
+                <br>
+
+                <li class="zoom"><a href="zoom.html"><img src="./images/zoom.png"></a></li>
+                <br>
+
+                <li class="todo"><a href="todoList.html"><img src="./images/green_todo_list.png"></a></li>
+            </ul>
+        </nav>
+        
+        
+    </div>
+
+    <div class="all-tasks">
+        <h2 class="task-list-title">My lists</h2>
+        <ul class="task-list" data-lists></ul>
+
+        <form action="" data-new-list-form>
+        <input 
+            type="text"
+            class="new list"
+            data-new-list-input
+            placeholder="new list name"
+            aria-label="new list name"
+        />
+        <button class="btn create" aria-label="new list name">+</button>
+        </form>
+    </div>
+
+    <div class="todo-list" data-list-display-container>
+        <div class="todo-header">
+            <h2 class="list-title" data-list-title></h2>
+            <p class="task-count" data-list-count></p>
+        </div>
+
+        <div class="todo-body">
+            <div class="tasks" data-tasks></div>
+
+            <div class="new-task-creator">
+                <form action="" data-new-task-form>
+                <input 
+                    type="text"
+                    data-new-task-input
+                    class="new task"
+                    placeholder="new task name"
+                    aria-label="new task name"
+                />
+                <button class="btn create" aria-label="create new task here">+</button>
+                </form>
+            </div>
+
+            <div class="delete-stuff">
+                <button class="btn delete" data-clear-complete-tasks-button>Clear completed tasks</button>
+                <button class="btn delete" data-delete-list-button>Delete list</button>
+            </div>
+        </div>
+    </div>
+
+    
+    </div>
+    <template id="task-template">
+        <div class="task">
+        <input type="checkbox" />
+        <label>
+            <span class="custom-checkbox"></span>
+        </label>
+        </div>
+    </template>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.color-overlay {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+}
+
+.LinkNUS {
+    position: absolute;
+    right: 50vw;
+    top: 185px;
+    font-family: "Martel";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 150px;
+    z-index: 1;
+}
+
+.join-form {
+    width: 80vh;
+}
+
+.quote {
+    position: absolute;
+    right: 59vw;
+    top: 480px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.forgotten-password {
+    color: white;
+    text-align: center;
+    list-style: none;
+}
+
+.join-form {
+    align-items: center;
+}
