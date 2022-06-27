@@ -36,3 +36,31 @@
     background: black;
     color: white;
 }
+
+caption {
+    text-align: left;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+table {
+    width: 60%;
+    position: relative;
+    left: 40vh;
+    top: 40vh;
+}
+
+th {
+    text-align: left;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+
+
+table, th, td {
+    border: 1px;
+    border-color: white;
+    border-collapse: collapse;
+    padding: 20px;
+}

@@ -38,13 +38,64 @@
     <form class = "select-form" action="includes/getStop.inc.php" method="POST"> 
         <select name="selectStop" placeholder="Select Bus Stop">
           <option value="" disabled selected>Select Bus Stop</option>
-          <!-- <?php
-          foreach($stops as $stop) {
-            echo "<option value='$stop'>$stop</option>";
-          }
-          ?> -->
+          <option value="PGPR">Prince George's Park Residences</option>
+          <option value="PGP">Prince George's Park</option>
+          <option value="Opp HSSML">Opp Hon Sui Sen Memorial Library</option>
+          <option value="BIZ 2">BIZ 2</option>
+          <option value="Opp NUSS">Opp NUSS</option>
+          <option value="TCOMS">TCOMS</option>
+          <option value="Opp TCOMS">Opp TCOMS</option>
+          <option value="AS 5">AS 5</option>
+          <option value="KR MRT">Kent Ridge MRT</option>
+          <option value="Opp KR MRT">Opp Kent Ridge MRT</option>
+          <option value="LT13">LT13</option>
+          <option value="COM 2">COM 2</option>
+          <option value="Ventus">Ventus</option>
+          <option value="CLB">Central Library</option>
+          <option value="LT 27">LT 27</option>
+          <option value="S 17">S 17</option>
+          <option value="UHall">University Hall</option>
+          <option value="Opp UHall">Opp University Hall</option>
+          <option value="IT">Infromation Technology</option>
+          <option value="Opp SDE 3">Opp SDE 3</option>
+          <option value="Opp UHC">Opposite University Health Centre</option>
+          <option value="UHC">University Health Centre</option>
+          <option value="YIH">Yusof Ishak House</option>
+          <option value="Opp YIH">Opp Yusof Ishak House</option>
+          <option value="Jpn Pr Sch">The Japanese Primary School</option>
+          <option value="Raffles Hall">Raffles Hall</option>
+          <option value="Museum">Museum</option>
+          <option value="Kent Vale">Kent Vale</option>
+          <option value="UTown">University Town</option>
+          <option value="OTH Building">Oei Tiong Ham Building</option>
+          <option value="BG MRT">Botanic Garden MRT</option>
+          <option value="College Gr">College Green</option>
         </select>
         <input type="submit" name="submit" value="Submit">
     </form>
+
+    <div class="table">
+        <table>
+            <caption>Bus Stop:</caption>
+
+            <tr>
+                <th>Buses</th>
+                <th>Arrival Time</th>
+                <th>Next Arrival Time</th>
+            </tr>
+
+            <tr>
+                <td>D1</td>
+                <td>5 mins</td>
+                <td>15 mins</td>
+            </tr>
+
+            <tr>
+                <td>D2</td>
+                <td>3 mins</td>
+                <td>13 mins</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
