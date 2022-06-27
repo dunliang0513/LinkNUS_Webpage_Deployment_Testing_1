@@ -30,15 +30,24 @@
           <form class="join-form ">
             <div class="input-group ">
               <label>Username:</label>
-              <input type="text" required>
+              <input 
+                type="text" 
+                required
+                name="username">
             </div>
             <div class="input-group ">
               <label>Email:</label>
-              <input type="email" required>
+              <input 
+                type="email" 
+                required
+                name="email">
             </div>
             <div class="input-group ">
               <label>Password:</label>
-              <input type="password" required>
+              <input  
+                type="password" 
+                required
+                name="password">
             </div>
             <div class="input-group ">
               <button type="submit" class="btn ">Sign Up</button>
@@ -50,4 +59,38 @@
       </section>
   </div>
 </body>
+
+<script src="https://unpkg.com/@supabase/supabase-js"></script>
+<script>
+  const { createClient } = supabase
+  supabase = createClient("https://qnebovnsfkdzauwjhhdk.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFuZWJvdm5zZmtkemF1d2poaGRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTYyNTU1ODMsImV4cCI6MTk3MTgzMTU4M30.8JsrDgEBzxhqQz4UQEU10o_op1jADbdUuz3iyUHJdPs")
+  
+  const form = document.querySelector('#join-form')
+  form.addEventListener('submit', async (event) => {
+      event.preventDefault()
+
+      const formInputs = form.querySelectorAll('input, select')
+
+      let submision = {}
+
+      formInputs.forEach(element => {
+        const { value, name } = element
+        if (value) {
+            submision[name] = value
+        }
+      })
+
+      const { error } = await supabase.from('entries').insert([submision], { returning: 'minimal'})
+
+      if (error) {
+          alert('There was an error please try again')
+      } else {
+          alert('Thanks for contacting us')
+      }
+
+      formInputs.forEach(element => element.value = '')
+
+  })
+</script>
 </html>
+
